@@ -10,7 +10,7 @@
                 <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ product.title }}</h5>
             </NuxtLink>
             <NuxtLink :to="`product-${product.id}`">
-                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ product.description }}</h5>
+                <p class="mb-3 text-gray-500 dark:text-gray-400 truncate">{{ product.description }}</p>
             </NuxtLink>
             <div class="flex items-center mt-2.5 mb-5">
                 <h5>Rating: </h5>
@@ -18,11 +18,11 @@
             </div>
             <div class="flex items-center justify-between">
                 <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ product.price }}</span>
-                <button @click="addToCart(product)" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    <span v-if="alreadyInCart(cart, product)" class="text-3xl font-bold text-gray-900 dark:text-white">Item Added</span>
-                    <span v-else class="text-3xl font-bold text-gray-900 dark:text-white">Add to Cart</span>
-                </button>
                 <span class="text-3xl font-bold text-gray-900 dark:text-white line-through">{{ product.price * 2 }}</span>
+                <button @click="addToCart(product)" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <span v-if="alreadyInCart(cart, product)">Item Added</span>
+                    <span v-else >Add to Cart</span>
+                </button>
             </div>
         </div>
     </div>
