@@ -1,7 +1,7 @@
 <template>
     <div>
 <nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4 px-24">
   <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <Icon
         name="uil:shop"
