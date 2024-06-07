@@ -1,75 +1,105 @@
-# Nuxt 3 Minimal Starter
+# Shopiverse - E-commerce Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to Shopiverse, a full-stack e-commerce website creation project designed to offer an intuitive and enjoyable online shopping experience for users. This project encompasses essential features like user registration, login, logout, product search, browsing product catalog, shopping cart management, checkout process, and secure purchases.
 
-## Setup
+## Table of Contents
 
-Make sure to install the dependencies:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-```bash
-# npm
-npm install
+## Features
 
-# pnpm
-pnpm install
+- **User Authentication**: Register, login, and logout functionalities.
+- **Product Catalog**: Browse and search for products.
+- **Shopping Cart**: Add, remove, and view items in the shopping cart.
+- **Checkout Process**: Seamless checkout and order processing.
+- **Payment Integration**: Secure payment processing with Stripe.
 
-# yarn
-yarn install
+## Technologies Used
 
-# bun
-bun install
-```
+### Front-end
+- **Nuxt.js**: A powerful Vue.js framework for building modern web applications.
+- **Tailwind CSS**: A utility-first CSS framework for designing responsive and attractive UI components.
 
-## Development Server
+### Back-end
+- **Prisma Flow (Supabase)**: An open-source database toolkit and API for managing back-end data.
 
-Start the development server on `http://localhost:3000`:
+### Payment Processing
+- **Stripe**: A comprehensive suite of APIs for handling secure online payments.
 
-```bash
-# npm
-npm run dev
+## Installation
 
-# pnpm
-pnpm run dev
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (version 12 or higher)
+- npm (version 6 or higher) or yarn
+- Supabase account and project setup
+- Stripe account for payment processing
 
-# yarn
-yarn dev
+### Steps
 
-# bun
-bun run dev
-```
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/shopiverse.git
+    cd shopiverse
+    ```
 
-## Production
+2. **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-Build the application for production:
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory and add the following variables:
+    ```env
+    SUPABASE_URL=your-supabase-url
+    SUPABASE_KEY=your-supabase-key
+    STRIPE_SECRET_KEY=your-stripe-secret-key
+    ```
 
-```bash
-# npm
-npm run build
+4. **Run the application:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-# pnpm
-pnpm run build
+    The application should now be running on `http://localhost:3000`.
 
-# yarn
-yarn build
+## Usage
 
-# bun
-bun run build
-```
+1. **User Registration and Login:**
+   - Register a new user account or login with existing credentials.
 
-Locally preview production build:
+2. **Browse Products:**
+   - Explore the product catalog and search for specific items.
 
-```bash
-# npm
-npm run preview
+3. **Manage Cart:**
+   - Add products to the shopping cart, update quantities, or remove items.
 
-# pnpm
-pnpm run preview
+4. **Checkout:**
+   - Proceed to checkout, enter shipping information, and complete the purchase securely using Stripe.
 
-# yarn
-yarn preview
+## Contributing
 
-# bun
-bun run preview
-```
+We welcome contributions to Shopiverse! To contribute, please follow these steps:
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to customize this template to better fit your project's specifics and any additional details you would like to include.
